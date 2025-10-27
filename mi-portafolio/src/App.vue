@@ -9,6 +9,7 @@
         <a href="#sobremi" class="hover:text-indigo-400">Sobre mí</a>
         <a href="#tecnologias" class="hover:text-indigo-400">Tecnologías</a>
         <a href="#proyectos" class="hover:text-indigo-400">Proyectos</a>
+        <a href="#certificados" class="hover:text-indigo-400">Certificados</a>
         <a href="#contacto" class="hover:text-indigo-400">Contacto</a>
       </nav>
     </header>
@@ -17,10 +18,12 @@
     <section id="inicio" class="h-screen flex flex-col justify-center items-center text-center px-6">
       <img src="/src/assets/perfil.jpg" alt="Perfil"
         class="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] rounded-full mb-6 shadow-lg shadow-indigo-500/30 border border-indigo-400/30" />
-      <h2 class="text-4xl md:text-5xl font-bold mb-3">Hola, Soy Samuel Gomez <span class="text-indigo-400">Desarrollador
-          Freelancer</span></h2>
-      <p class="text-gray-400 max-w-lg">Apasionado por el diseño web moderno, las animaciones suaves y la experiencia de
-        usuario.</p>
+      <h2 class="text-4xl md:text-5xl font-bold mb-3">
+        Hola, Soy Samuel Gomez <span class="text-indigo-400">Desarrollador Freelancer</span>
+      </h2>
+      <p class="text-gray-400 max-w-lg">
+        Apasionado por el diseño web moderno, las animaciones suaves y la experiencia de usuario.
+      </p>
     </section>
 
     <!-- SOBRE MÍ -->
@@ -30,8 +33,8 @@
         <h3 class="text-3xl font-semibold text-indigo-400 mb-6">Sobre mí</h3>
         <p class="text-gray-300 leading-relaxed">
           Desarrollador web apasionado con experiencia en la creación de sitios modernos, responsivos y funcionales. 
-          Habilidades en <span class="text-indigo-300">HTML, CSS, JavaScript, Vue.js, Postman, y conocimientos de Jenkins. </span>. Enfocado en soluciones
-           digitales para negocios locales.
+          Habilidades en <span class="text-indigo-300">HTML, CSS, JavaScript, Vue.js, Postman y conocimientos de Jenkins</span>. 
+          Enfocado en soluciones digitales para negocios locales.
         </p>
       </div>
     </section>
@@ -65,6 +68,48 @@
       </div>
     </section>
 
+    <!-- CERTIFICADOS -->
+    <section id="certificados" class="py-20 px-6 md:px-20 text-center">
+      <h3 class="text-3xl font-semibold text-indigo-400 mb-10">Certificados</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          v-for="(cert, i) in certificados"
+          :key="i"
+          class="bg-white/10 backdrop-blur-md border border-white/10 rounded-3xl overflow-hidden shadow-xl shadow-indigo-500/10 hover:scale-105 transition transform cursor-pointer"
+          @click="openModal(cert.imagen)"
+        >
+          <img :src="cert.imagen" :alt="cert.nombre"
+            class="w-full h-60 object-cover opacity-90 hover:opacity-100 transition" />
+          <div class="p-5 text-left">
+            <h4 class="text-lg font-semibold text-white">{{ cert.nombre }}</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL -->
+    <transition name="fade">
+      <div
+        v-if="modalVisible"
+        class="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+        @click.self="closeModal"
+      >
+        <div class="relative max-w-4xl w-full mx-4">
+          <button
+            @click="closeModal"
+            class="absolute top-4 right-4 text-white text-3xl hover:text-indigo-400"
+          >
+            &times;
+          </button>
+          <img
+            :src="selectedImage"
+            alt="Vista previa del certificado"
+            class="w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
+          />
+        </div>
+      </div>
+    </transition>
+
     <!-- CONTACTO -->
     <section id="contacto" class="py-20 text-center">
       <div
@@ -74,8 +119,8 @@
         <div class="flex flex-wrap justify-center gap-6 text-sm text-indigo-300 font-medium">
           <a href="mailto:samuelgomezltjnc@gmail.com" class="hover:text-indigo-400 transition">Email</a>
           <a href="#" class="hover:text-indigo-400 transition">GitHub</a>
-          <a href="#" class="hover:text-indigo-400 transition">LinkedIn</a>
-          <a href="#" class="hover:text-indigo-400 transition">Instagram</a>
+          <a href="https://wa.me/8292308873?" class="hover:text-indigo-400 transition">Whatsapp</a>
+          <a href="https://www.instagram.com/samy_gomez30/?hl=en&g=5" class="hover:text-indigo-400 transition">Instagram</a>
         </div>
       </div>
     </section>
@@ -88,6 +133,30 @@
 </template>
 
 <script setup>
+import { ref } from "vue";
+
+// --- MODAL DE CERTIFICADOS ---
+const modalVisible = ref(false);
+const selectedImage = ref("");
+
+function openModal(src) {
+  selectedImage.value = src;
+  modalVisible.value = true;
+  document.body.style.overflow = "hidden"; // Evita scroll del fondo
+}
+
+function closeModal() {
+  modalVisible.value = false;
+  document.body.style.overflow = "auto";
+}
+
+// --- ARRAYS DE DATOS ---
+const certificados = [
+  { nombre: "Web Developer", imagen: "/src/assets/c1.png" },
+  { nombre: "TailwindCSS", imagen: "/src/assets/c2.png" },
+  { nombre: "Certificado 1", imagen: "/src/assets/c3.png" },
+];
+
 const tecnologias = [
   { nombre: "HTML5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
   { nombre: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
@@ -99,19 +168,18 @@ const tecnologias = [
   { nombre: "Postman", logo: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/postman/postman-original.svg" },
   { nombre: "Jenkins", logo: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/jenkins/jenkins-original.svg" },
   { nombre: "VS Code", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
-  { nombre: "SQL Serve", logo: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/microsoftsqlserver/microsoftsqlserver-original.svg" },
+  { nombre: "SQL Server", logo: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/microsoftsqlserver/microsoftsqlserver-original.svg" },
 ];
-
 
 const proyectos = [
   {
-    nombre: "Negocio html + Css + JavaScript",
-    descripcion: "Ecommerce moderno con autenticación y gestión de productos.",
-    imagen: "https://github.com/Project3022/oo/blob/main/1.png?raw=truew=800",
+    nombre: "Negocio HTML + CSS + JavaScript",
+    descripcion: "Multi Tiendas En Un Mismo Sitio.",
+    imagen: "https://github.com/Project3022/oo/blob/main/1.png?raw=true",
   },
   {
     nombre: "Dashboard Interactivo",
-    descripcion: "Panel de control con estadísticas dinámicas y diseño responsive.",
+    descripcion: "Página para vender y comprar productos con API de WhatsApp.",
     imagen: "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800",
   },
   {
@@ -121,3 +189,15 @@ const proyectos = [
   },
 ];
 </script>
+
+<style scoped>
+/* Animación suave del modal */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
