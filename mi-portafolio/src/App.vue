@@ -50,10 +50,10 @@
         </div>
       </div>
     </section>
-
+    
     <!-- PROYECTOS -->
     <section id="proyectos" class="py-20 px-6 md:px-20 text-center">
-      <h3 class="text-3xl font-semibold text-indigo-400 mb-10">Proyectos Destacados</h3>
+      <h3 class="text-3xl font-semibold text-indigo-400  mb-10">Proyectos Destacados</h3>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div v-for="(p, i) in proyectos" :key="i"
           class="bg-white/10 backdrop-blur-md border border-white/10 rounded-3xl overflow-hidden shadow-xl shadow-indigo-500/10 hover:scale-105 transition transform">
@@ -175,12 +175,12 @@ const proyectos = [
   {
     nombre: "Negocio HTML + CSS + JavaScript",
     descripcion: "Multi Tiendas En Un Mismo Sitio.",
-    imagen: "https://github.com/Project3022/oo/blob/main/1.png?raw=true",
+    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/mi-portafolio/src/assets/1.png?raw=true",
   },
   {
     nombre: "Dashboard Interactivo",
     descripcion: "Página para vender y comprar productos con API de WhatsApp.",
-    imagen: "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800",
+    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/mi-portafolio/src/assets/2.png?raw=true",
   },
   {
     nombre: "App Fitness",
