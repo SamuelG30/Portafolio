@@ -152,9 +152,9 @@ function closeModal() {
 
 // --- ARRAYS DE DATOS ---
 const certificados = [
-  { nombre: "Web Developer", imagen: "/src/assets/c1.png" },
-  { nombre: "TailwindCSS", imagen: "/src/assets/c2.png" },
-  { nombre: "Certificado 1", imagen: "/src/assets/c3.png" },
+  { nombre: "Web Developer", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c1.png?raw=true./src/assets/c1.png" },
+  { nombre: "TailwindCSS", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c2.png?raw=true" },
+  { nombre: "Certificado 1", imagen: "./src/assets/c3.png" },
 ];
 
 const tecnologias = [
@@ -175,13 +175,11 @@ const proyectos = [
   {
     nombre: "Negocio HTML + CSS + JavaScript",
     descripcion: "Multi Tiendas En Un Mismo Sitio.",
-    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/mi-portafolio/src/assets/1.png?raw=true",
-  },
+    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/1.png?raw=true" },
   {
     nombre: "Dashboard Interactivo",
     descripcion: "Página para vender y comprar productos con API de WhatsApp.",
-    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/mi-portafolio/src/assets/2.png?raw=true",
-  },
+    imagen:  "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/2.png?raw=true" },
   {
     nombre: "App Fitness",
     descripcion: "Aplicación de entrenamiento con rutinas y control de progreso.",

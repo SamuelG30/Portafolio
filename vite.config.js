@@ -7,5 +7,5 @@ export default defineConfig({
     vue(),
     tailwindcss(),
   ],
-  base: "/Portafolio/"
-})
+  base: "/Portafolio/",
+});
