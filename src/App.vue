@@ -3,7 +3,7 @@
     <!-- HEADER -->
     <header
       class="flex justify-between items-center px-8 py-6 backdrop-blur-md bg-white/5 fixed top-0 left-0 w-full z-50 border-b border-white/10">
-      <h1 class="text-2xl font-bold text-indigo-400">Mi Portafolio</h1>
+      <h1 class="text-2xl font-bold text-indigo-400">Portafolio</h1>
       <nav class="hidden md:flex gap-6 text-gray-300">
         <a href="#inicio" class="hover:text-indigo-400">Inicio</a>
         <a href="#sobremi" class="hover:text-indigo-400">Sobre mí</a>
@@ -32,8 +32,9 @@
         class="bg-white/10 backdrop-blur-md rounded-3xl p-10 max-w-3xl mx-auto border border-white/10 shadow-lg shadow-indigo-500/10">
         <h3 class="text-3xl font-semibold text-indigo-400 mb-6">Sobre mí</h3>
         <p class="text-gray-300 leading-relaxed">
-          Desarrollador web apasionado con experiencia en la creación de sitios modernos, responsivos y funcionales. 
-          Habilidades en <span class="text-indigo-300">HTML, CSS, JavaScript, Vue.js, Postman y conocimientos de Jenkins</span>. 
+          Desarrollador web apasionado con experiencia en la creación de sitios modernos, responsivos y funcionales.
+          Habilidades en <span class="text-indigo-300">HTML, CSS, JavaScript, Vue.js, Postman y conocimientos de
+            Jenkins</span>.
           Enfocado en soluciones digitales para negocios locales.
         </p>
       </div>
@@ -50,7 +51,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- PROYECTOS -->
     <section id="proyectos" class="py-20 px-6 md:px-20 text-center">
       <h3 class="text-3xl font-semibold text-indigo-400  mb-10">Proyectos Destacados</h3>
@@ -62,7 +63,8 @@
           <div class="p-5 text-left">
             <h4 class="text-lg font-semibold text-indigo-300 mb-1">{{ p.nombre }}</h4>
             <p class="text-gray-400 text-sm mb-3">{{ p.descripcion }}</p>
-            <a href="https://storemultishop.com/" class="text-indigo-400 text-sm font-semibold hover:underline">Ver más →</a>
+            <a href="https://storemultishop.com/" class="text-indigo-400 text-sm font-semibold hover:underline">Ver más
+              →</a>
           </div>
         </div>
       </div>
@@ -72,14 +74,12 @@
     <section id="certificados" class="py-20 px-6 md:px-20 text-center">
       <h3 class="text-3xl font-semibold text-indigo-400 mb-10">Certificados</h3>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div
-          v-for="(cert, i) in certificados"
-          :key="i"
+        <div v-for="(cert, i) in certificados" :key="i"
           class="bg-white/10 backdrop-blur-md border border-white/10 rounded-3xl overflow-hidden shadow-xl shadow-indigo-500/10 hover:scale-105 transition transform cursor-pointer"
-          @click="openModal(cert.imagen)"
-        >
+          @click="openModal(cert.imagen)">
           <img :src="cert.imagen" :alt="cert.nombre"
-            class="w-full h-60 object-cover opacity-90 hover:opacity-100 transition" />
+            class="w-full h-25 sm:h-52 md:h-60 object-cover opacity-90 hover:opacity-100 transition" />
+
           <div class="p-5 text-left">
             <h4 class="text-lg font-semibold text-white">{{ cert.nombre }}</h4>
           </div>
@@ -89,23 +89,14 @@
 
     <!-- MODAL -->
     <transition name="fade">
-      <div
-        v-if="modalVisible"
-        class="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
-        @click.self="closeModal"
-      >
+      <div v-if="modalVisible" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+        @click.self="closeModal">
         <div class="relative max-w-4xl w-full mx-4">
-          <button
-            @click="closeModal"
-            class="absolute top-4 right-4 text-white text-3xl hover:text-indigo-400"
-          >
+          <button @click="closeModal" class="absolute top-4 right-4 text-white text-3xl hover:text-indigo-400">
             &times;
           </button>
-          <img
-            :src="selectedImage"
-            alt="Vista previa del certificado"
-            class="w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
-          />
+          <img :src="selectedImage" alt="Vista previa del certificado"
+            class="w-full max-h-[90vh] object-contain rounded-lg shadow-2xl" />
         </div>
       </div>
     </transition>
@@ -120,7 +111,8 @@
           <a href="mailto:samuelgomezltjnc@gmail.com" class="hover:text-indigo-400 transition">Email</a>
           <a href="#" class="hover:text-indigo-400 transition">GitHub</a>
           <a href="https://wa.me/8292308873?" class="hover:text-indigo-400 transition">Whatsapp</a>
-          <a href="https://www.instagram.com/samy_gomez30/?hl=en&g=5" class="hover:text-indigo-400 transition">Instagram</a>
+          <a href="https://www.instagram.com/samy_gomez30/?hl=en&g=5"
+            class="hover:text-indigo-400 transition">Instagram</a>
         </div>
       </div>
     </section>
@@ -175,11 +167,13 @@ const proyectos = [
   {
     nombre: "Negocio HTML + CSS + JavaScript",
     descripcion: "Multi Tiendas En Un Mismo Sitio.",
-    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/1.png?raw=true" },
+    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/1.png?raw=true"
+  },
   {
     nombre: "Dashboard Interactivo",
     descripcion: "Página para vender y comprar productos con API de WhatsApp.",
-    imagen:  "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/2.png?raw=true" },
+    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/2.png?raw=true"
+  },
   {
     nombre: "App Fitness",
     descripcion: "Aplicación de entrenamiento con rutinas y control de progreso.",
@@ -194,6 +188,7 @@ const proyectos = [
 .fade-leave-active {
   transition: opacity 0.3s ease;
 }
+
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
