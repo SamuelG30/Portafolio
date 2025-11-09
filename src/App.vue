@@ -63,8 +63,8 @@
           <div class="p-5 text-left">
             <h4 class="text-lg font-semibold text-indigo-300 mb-1">{{ p.nombre }}</h4>
             <p class="text-gray-400 text-sm mb-3">{{ p.descripcion }}</p>
-            <a href="https://storemultishop.com/" class="text-indigo-400 text-sm font-semibold hover:underline">Ver más
-              →</a>
+            <a :href="p.link" target="_blank" rel="noopener noreferrer"
+              class="text-indigo-400 text-sm font-semibold hover:underline">Ver más →</a>
           </div>
         </div>
       </div>
@@ -134,7 +134,7 @@ const selectedImage = ref("");
 function openModal(src) {
   selectedImage.value = src;
   modalVisible.value = true;
-  document.body.style.overflow = "hidden"; // Evita scroll del fondo
+  document.body.style.overflow = "hidden";
 }
 
 function closeModal() {
@@ -144,9 +144,9 @@ function closeModal() {
 
 // --- ARRAYS DE DATOS ---
 const certificados = [
-  { nombre: "Web Developer", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c1.png?raw=true./src/assets/c1.png" },
+  { nombre: "Web Developer", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c1.png?raw=true" },
   { nombre: "TailwindCSS", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c2.png?raw=true" },
-  { nombre: "Certificado 1", imagen: "./src/assets/c3.png" },
+  { nombre: "Git GitHub", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c3.png?raw=true" },
 ];
 
 const tecnologias = [
@@ -159,6 +159,7 @@ const tecnologias = [
   { nombre: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
   { nombre: "Postman", logo: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/postman/postman-original.svg" },
   { nombre: "Jenkins", logo: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/jenkins/jenkins-original.svg" },
+  { nombre: "Jira", logo: "https://raw.githubusercontent.com/VectorLogoZone/vectorlogozone/b1ee6e4bb063e2db8bbf07278cb619b038c2f655/www/logos/atlassian_jira/atlassian_jira-icon.svg" },
   { nombre: "VS Code", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
   { nombre: "SQL Server", logo: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/microsoftsqlserver/microsoftsqlserver-original.svg" },
 ];
@@ -167,23 +168,25 @@ const proyectos = [
   {
     nombre: "Negocio HTML + CSS + JavaScript",
     descripcion: "Multi Tiendas En Un Mismo Sitio.",
-    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/1.png?raw=true"
+    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/1.png?raw=true",
+    link: "https://storemultishop.com/"
   },
   {
-    nombre: "Dashboard Interactivo",
-    descripcion: "Página para vender y comprar productos con API de WhatsApp.",
-    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/2.png?raw=true"
+    nombre: "MaxSupply",
+    descripcion: "Página para vender Suplementos y Acesorios Deportivo con API de WhatsApp.",
+    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/2.png?raw=true",
+    link: "https://storemultishop.com/MaxSupply/Suplementos/Creatina.html"
   },
   {
     nombre: "App Fitness",
     descripcion: "Aplicación de entrenamiento con rutinas y control de progreso.",
     imagen: "https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?w=800",
+    link: "https://appfitnessdemo.com/"
   },
 ];
 </script>
 
 <style scoped>
-/* Animación suave del modal */
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.3s ease;
