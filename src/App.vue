@@ -109,7 +109,7 @@
         <p class="text-gray-300 mb-8">¿Tienes un proyecto o una idea? ¡Hablemos!</p>
         <div class="flex flex-wrap justify-center gap-6 text-sm text-indigo-300 font-medium">
           <a href="mailto:samuelgomezltjnc@gmail.com" class="hover:text-indigo-400 transition">Email</a>
-          <a href="#" class="hover:text-indigo-400 transition">GitHub</a>
+          <a href="https://github.com/SamuelG30/Portafolio" class="hover:text-indigo-400 transition">GitHub</a>
           <a href="https://wa.me/8292308873?" class="hover:text-indigo-400 transition">Whatsapp</a>
           <a href="https://www.instagram.com/samy_gomez30/?hl=en&g=5"
             class="hover:text-indigo-400 transition">Instagram</a>
@@ -158,30 +158,37 @@ const tecnologias = [
   { nombre: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
   { nombre: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
   { nombre: "Postman", logo: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/postman/postman-original.svg" },
-  { nombre: "Jenkins", logo: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/jenkins/jenkins-original.svg" },
   { nombre: "Jira", logo: "https://raw.githubusercontent.com/VectorLogoZone/vectorlogozone/b1ee6e4bb063e2db8bbf07278cb619b038c2f655/www/logos/atlassian_jira/atlassian_jira-icon.svg" },
+  { nombre: "BitBucket", logo: "https://raw.githubusercontent.com/VectorLogoZone/vectorlogozone/b1ee6e4bb063e2db8bbf07278cb619b038c2f655/www/logos/bitbucket/bitbucket-icon.svg" },
+  { nombre: "Jenkins", logo: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/jenkins/jenkins-original.svg" },
   { nombre: "VS Code", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
   { nombre: "SQL Server", logo: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/microsoftsqlserver/microsoftsqlserver-original.svg" },
 ];
 
 const proyectos = [
   {
-    nombre: "Negocio HTML + CSS + JavaScript",
+    nombre: "Negocio (HTML + CSS + JavaScript)",
     descripcion: "Multi Tiendas En Un Mismo Sitio.",
     imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/1.png?raw=true",
     link: "https://storemultishop.com/"
   },
   {
-    nombre: "MaxSupply",
-    descripcion: "Página para vender Suplementos y Acesorios Deportivo con API de WhatsApp.",
+    nombre: "MaxSupply (API de WhatsApp)",
+    descripcion: "Página Para Vender Suplementos y Acesorios Deportivo",
     imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/2.png?raw=true",
     link: "https://storemultishop.com/MaxSupply/Suplementos/Creatina.html"
   },
   {
-    nombre: "App Fitness",
-    descripcion: "Aplicación de entrenamiento con rutinas y control de progreso.",
-    imagen: "https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?w=800",
-    link: "https://appfitnessdemo.com/"
+    nombre: "MarkeShop (Base de Datos)",
+    descripcion: "Pagina Web Responsive Para Vender y Comprar Productos",
+    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/3.png?raw=true",
+    link: "https://storemultishop.com/MarkeShop/Inicio.html"
+  },
+    {
+    nombre: "Portafolio (VUES.JS + TAILWIND CSS) ",
+    descripcion: "Portafolios Actrctivos y Modernos ",
+    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/3.png?raw=true",
+    link: "https://samuelg30.github.io/Portafolio/"
   },
 ];
 </script>
