@@ -147,6 +147,8 @@ const certificados = [
   { nombre: "Web Developer", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c1.png?raw=true" },
   { nombre: "TailwindCSS", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c2.png?raw=true" },
   { nombre: "Git GitHub", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c3.png?raw=true" },
+  { nombre: "Postman", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c4.png?raw=true" },
+  { nombre: "Jira", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c4.png?raw=true" },
 ];
 
 const tecnologias = [
@@ -187,7 +189,7 @@ const proyectos = [
     {
     nombre: "Portafolio (VUES.JS + TAILWIND CSS) ",
     descripcion: "Portafolios Actrctivos y Modernos ",
-    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/3.png?raw=true",
+    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/4.png?raw=true",
     link: "https://samuelg30.github.io/Portafolio/"
   },
 ];
