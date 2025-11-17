@@ -25,7 +25,7 @@
         Apasionado por el diseño web moderno, las animaciones suaves y la experiencia de usuario.
       </p>
     </section>
-
+  
     <!-- SOBRE MÍ -->
     <section id="sobremi" class="py-20 px-6 md:px-20 text-center">
       <div
@@ -148,7 +148,7 @@ const certificados = [
   { nombre: "TailwindCSS", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c2.png?raw=true" },
   { nombre: "Git GitHub", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c3.png?raw=true" },
   { nombre: "Postman", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c4.png?raw=true" },
-  { nombre: "Jira", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c4.png?raw=true" },
+  { nombre: "Jira", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c5.png?raw=true" },
 ];
 
 const tecnologias = [
