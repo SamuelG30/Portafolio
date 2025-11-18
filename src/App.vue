@@ -113,7 +113,7 @@
           <a href="https://wa.me/8292308873?" class="hover:text-indigo-400 transition">Whatsapp</a>
           <a href="https://www.instagram.com/samy_gomez30/?hl=en&g=5"
             class="hover:text-indigo-400 transition">Instagram</a>
-           <a href="./assets/CV_Samuel_Gomez.pdf" download
+           <a href="CV_Samuel_Gomez.pdf" download
    class="px-6  bg-indigo-500 hover:bg-indigo-600 text-white font-semibold rounded-xl shadow-lg shadow-indigo-500/20 transition">
    Descargar CV
 </a>
