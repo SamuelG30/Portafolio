@@ -168,6 +168,8 @@ const tecnologias = [
   { nombre: "Jira", logo: "https://raw.githubusercontent.com/VectorLogoZone/vectorlogozone/b1ee6e4bb063e2db8bbf07278cb619b038c2f655/www/logos/atlassian_jira/atlassian_jira-icon.svg" },
   { nombre: "BitBucket", logo: "https://raw.githubusercontent.com/VectorLogoZone/vectorlogozone/b1ee6e4bb063e2db8bbf07278cb619b038c2f655/www/logos/bitbucket/bitbucket-icon.svg" },
   { nombre: "Jenkins", logo: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/jenkins/jenkins-original.svg" },
+  { nombre: "IBM API Connect", logo: "https://raw.githubusercontent.com/VectorLogoZone/vectorlogozone/b1ee6e4bb063e2db8bbf07278cb619b038c2f655/www/logos/ibm/ibm-icon.svg" },
+  { nombre: "Docker", logo: "https://raw.githubusercontent.com/VectorLogoZone/vectorlogozone/b1ee6e4bb063e2db8bbf07278cb619b038c2f655/www/logos/docker/docker-icon.svg" },
   { nombre: "VS Code", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
   { nombre: "SQL Server", logo: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/microsoftsqlserver/microsoftsqlserver-original.svg" },
 ];
@@ -193,7 +195,7 @@ const proyectos = [
   },
     {
     nombre: "Portafolio (VUES.JS + TAILWIND CSS) ",
-    descripcion: "Portafolios Actrctivos y Modernos ",
+    descripcion: "Portafolios Actractivos y Modernos ",
     imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/4.png?raw=true",
     link: "https://samuelg30.github.io/Portafolio/"
   },
