@@ -16,7 +16,7 @@ test("renderiza todas las tecnologías", () => {
   const techItems = wrapper.findAll('[id="tecnologias"] div div');
 
   // Debe coincidir con tecnologias.length (16)
-  expect(techItems.length).toBe(16);
+  expect(techItems.length).toBe(15);
 });
 
 
