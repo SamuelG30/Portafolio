@@ -188,7 +188,7 @@ const proyectos = [
     link: "https://storemultishop.com/MaxSupply/Suplementos/Creatina.html"
   },
   {
-    nombre: "MarkeShop (Base de Datos.)",
+    nombre: "MarkeShop (Base de Datos)",
     descripcion: "Pagina Web Responsive Para Vender y Comprar Productos",
     imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/3.png?raw=true",
     link: "https://storemultishop.com/MarkeShop/Inicio.html"
