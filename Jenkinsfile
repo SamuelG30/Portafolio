@@ -38,29 +38,29 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'github-token', usernameVariable: 'GITHUB_USER', passwordVariable: 'GITHUB_TOKEN')]) {
                     sh '''
-                        echo $GITHUB_USER $GITHUB_TOKEN // ejemplo de uso
+                        echo $GITHUB_USER **** # ejemplo de uso
 
                         git config --global user.email "jenkins@ci.com"
                         git config --global user.name "Jenkins CI"
 
-                        // Eliminar si existe
+                        # Eliminar si existe
                         rm -rf gh-pages
 
-                        // Clonamos la rama gh-pages (si no existe Jenkins la crea)
+                        # Clonamos la rama gh-pages (si no existe Jenkins la crea)
                         git clone --branch gh-pages https://$GITHUB_TOKEN@github.com/SamuelG30/Portafolio.git gh-pages || \
                         git clone https://$GITHUB_TOKEN@github.com/SamuelG30/Portafolio.git gh-pages
 
                         cd gh-pages
 
-                        // Creamos la rama si no existe
+                        # Creamos la rama si no existe
                         git checkout gh-pages || git checkout -b gh-pages
 
-                        // Borramos archivos anteriores
+                        # Borramos archivos anteriores
                         rm -rf *
 
                         cd ..
 
-                        // Copiamos los archivos generados en dist
+                        # Copiamos los archivos generados en dist
                         cp -r dist/* gh-pages/
 
                         cd gh-pages
