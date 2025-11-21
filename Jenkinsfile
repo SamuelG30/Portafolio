@@ -38,17 +38,17 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'github-token', usernameVariable: 'GITHUB_USER', passwordVariable: 'GITHUB_TOKEN')]) {
                     sh '''
-                        echo $GITHUB_USER **** # ejemplo de uso
+                        echo "Deploying to GitHub Pages as $GITHUB_USER"
 
                         git config --global user.email "jenkins@ci.com"
                         git config --global user.name "Jenkins CI"
 
-                        # Eliminar si existe
+                        # Eliminar carpeta gh-pages si existe
                         rm -rf gh-pages
 
-                        # Clonamos la rama gh-pages (si no existe Jenkins la crea)
-                        git clone --branch gh-pages https://$GITHUB_TOKEN@github.com/SamuelG30/Portafolio.git gh-pages || \
-                        git clone https://$GITHUB_TOKEN@github.com/SamuelG30/Portafolio.git gh-pages
+                        # Clonamos la rama gh-pages (si no existe, se crea)
+                        git clone --branch gh-pages https://$GITHUB_USER:$GITHUB_TOKEN@github.com/SamuelG30/Portafolio.git gh-pages || \
+                        git clone https://$GITHUB_USER:$GITHUB_TOKEN@github.com/SamuelG30/Portafolio.git gh-pages
 
                         cd gh-pages
 
@@ -64,9 +64,11 @@ pipeline {
                         cp -r dist/* gh-pages/
 
                         cd gh-pages
+
+                        # Commiteamos y push
                         git add .
                         git commit -m "Deploy automático desde Jenkins" || echo "Nada que commitear"
-                        git push https://$GITHUB_TOKEN@github.com/SamuelG30/Portafolio.git gh-pages
+                        git push https://$GITHUB_USER:$GITHUB_TOKEN@github.com/SamuelG30/Portafolio.git gh-pages
                     '''
                 }
             }
