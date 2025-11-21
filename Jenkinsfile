@@ -37,8 +37,9 @@ pipeline {
                 expression { currentBuild.currentResult == 'SUCCESS' }
             }
             steps {
-                withCredentials([string(credentialsId: 'github-token', variable: 'GITHUB_TOKEN')]) {
-                    sh '''
+                withCredentials([usernamePassword(credentialsId: 'github-token', usernameVariable: 'GITHUB_USER', passwordVariable: 'GITHUB_TOKEN')]) {
+    sh 'echo $GITHUB_USER $GITHUB_TOKEN' // ejemplo de uso
+
                         git config --global user.email "jenkins@ci.com"
                         git config --global user.name "Jenkins CI"
 
