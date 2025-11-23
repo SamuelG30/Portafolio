@@ -56,8 +56,6 @@ test('el enlace de descarga del CV existe y tiene el atributo download', () => {
     </a>
   `;
 
-  // Buscamos el enlace por su texto
-  const link = getByText(document.body, 'Descargar CV');
 
   // Comprobamos que exista en el DOM
   expect(link).toBeInTheDocument();
