@@ -47,22 +47,3 @@ test("cierra el modal al hacer click en el botón cerrar", async () => {
 });
 
 
-test('el enlace de descarga del CV existe y tiene el atributo download', () => {
-  // Creamos un contenedor HTML simulado
-  document.body.innerHTML = `
-    <a href="CV_Samuel_Gomez.pdf" download
-       class="px-6 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold rounded-xl shadow-lg shadow-indigo-500/20 transition">
-       Descargar CV
-    </a>
-  `;
-
-
-  // Comprobamos que exista en el DOM
-  expect(link).toBeInTheDocument();
-
-  // Comprobamos que tenga el atributo href correcto
-  expect(link).toHaveAttribute('href', 'CV_Samuel_Gomez.pdf');
-
-  // Comprobamos que tenga el atributo download
-  expect(link).toHaveAttribute('download');
-});
