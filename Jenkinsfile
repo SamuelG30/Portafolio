@@ -32,29 +32,21 @@ pipeline {
 
         stage('Deploy to GitHub Pages') {
             steps {
-                withCredentials([string(credentialsId: 'github-token', variable: 'GITHUB_TOKEN')]) {
-                    sh '''
-                        git config --global user.email "jenkins@ci.com"
-                        git config --global user.name "Jenkins CI"
+                withCredentials([usernamePassword(credentialsId: 'github-token', usernameVariable: 'USER', passwordVariable: 'TOKEN')]) {
+    sh '''
+        git config --global user.email "jenkins@example.com"
+        git config --global user.name "Jenkins"
 
-                        rm -rf gh-pages
-                        git clone --branch gh-pages https://SamuelG30:$GITHUB_TOKEN@github.com/SamuelG30/Portafolio.git gh-pages || \
-                        git clone https://SamuelG30:$GITHUB_TOKEN@github.com/SamuelG30/Portafolio.git gh-pages
+        echo "→ Configurando Git con usuario y token"
+        git remote set-url origin https://${USER}:${TOKEN}@github.com/SamuelG30/Portafolio.git
 
-                        cd gh-pages
-                        git checkout gh-pages || git checkout -b gh-pages
-                        rm -rf *
+        echo "→ Instalando gh-pages"
+        npm install -g gh-pages
 
-                        cd ..
-                        cp -r dist/* gh-pages/
+        echo "→ Desplegando a GitHub Pages..."
+        gh-pages -d dist
+    '''
+}
 
-                        cd gh-pages
-                        git add .
-                        git commit -m "Deploy automático desde Jenkins" || echo "Nada que commitear"
-                        git push https://SamuelG30:$GITHUB_TOKEN@github.com/SamuelG30/Portafolio.git gh-pages
-                    '''
-                }
-            }
-        }
     }
 }
