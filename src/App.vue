@@ -176,6 +176,12 @@ const tecnologias = [
 
 const proyectos = [
   {
+    nombre: "Negocio (React + TAILWIND CSS + BASE DE DATOS + API de WhatsApp )",
+    descripcion: "Sitio Web Para Restaurante Con Funcion de Pedidos Con Api.",
+    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/1.png?raw=true",
+    link: "https://mistyrose-coyote-145425.hostingersite.com/"
+  },
+  {
     nombre: "Negocio (HTML + CSS + JavaScript)",
     descripcion: "Multi Tiendas En Un Mismo Sitio.",
     imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/1.png?raw=true",
