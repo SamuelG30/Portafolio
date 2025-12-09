@@ -154,6 +154,7 @@ const certificados = [
   { nombre: "Git GitHub", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c3.png?raw=true" },
   { nombre: "Postman", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c4.png?raw=true" },
   { nombre: "Jira", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c5.png?raw=true" },
+  { nombre: "Git, Bitbucket, Jira", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c6.png?raw=true" },
 ];
 
 const tecnologias = [
@@ -176,9 +177,9 @@ const tecnologias = [
 
 const proyectos = [
   {
-    nombre: "Negocio (React + TAILWIND CSS + BASE DE DATOS + API de WhatsApp )",
+    nombre: "Restaurante (REACT + TAILWIND CSS + BASE DE DATOS + API de WhatsApp )",
     descripcion: "Sitio Web Para Restaurante Con Funcion de Pedidos Con Api.",
-    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/1.png?raw=true",
+    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/5.png?raw=true",
     link: "https://mistyrose-coyote-145425.hostingersite.com/"
   },
   {
