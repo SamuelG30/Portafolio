@@ -177,7 +177,7 @@ const tecnologias = [
 
 const proyectos = [
   {
-    nombre: "Restaurante (REACT + TAILWIND CSS + BASE DE DATOS + API de WhatsApp )",
+    nombre: "Restaurante (REACT + TAILWIND CSS + BASE DE DATOS + API de WhatsApp. )",
     descripcion: "Sitio Web Para Restaurante Con Funcion de Pedidos Con Api.",
     imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/5.png?raw=true",
     link: "https://mistyrose-coyote-145425.hostingersite.com/"
