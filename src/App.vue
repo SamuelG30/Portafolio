@@ -19,24 +19,20 @@
       <img src="/src/assets/perfil.jpg" alt="Perfil"
         class="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] rounded-full mb-6 shadow-lg shadow-indigo-500/30 border border-indigo-400/30" />
       <h2 class="text-4xl md:text-5xl font-bold mb-3">
-        Hola, Soy Samuel Gomez <span class="text-indigo-400">Desarrollador Freelancer</span>
+        Hola, Soy Samuel Gomez <br><span class="text-indigo-400">Desarrollador Freelancer y QA Automation</span>
       </h2>
-      <p class="text-gray-400 max-w-lg">
-        Apasionado por el diseño web moderno, las animaciones suaves y la experiencia de usuario.
-      </p>
     </section>
   
     <!-- SOBRE MÍ -->
     <section id="sobremi" class="py-20 px-6 md:px-20 text-center">
       <div
         class="bg-white/10 backdrop-blur-md rounded-3xl p-10 max-w-3xl mx-auto border border-white/10 shadow-lg shadow-indigo-500/10">
-        <h3 class="text-3xl font-semibold text-indigo-400 mb-6">Sobre mí</h3>
-        <p class="text-gray-300 leading-relaxed">
-          Desarrollador web apasionado con experiencia en la creación de sitios modernos, responsivos y funcionales.
-          Habilidades en <span class="text-indigo-300">HTML, CSS, JavaScript, Vue.js, Postman y conocimientos de
-            Jenkins</span>.
-          Enfocado en soluciones digitales para negocios locales.
-        </p>
+<h3 class="text-3xl font-semibold text-indigo-400 mb-6">Sobre mí</h3>
+<p class="text-gray-300 leading-relaxed">
+  Apasionado por el diseño web moderno, las animaciones suaves y la experiencia de usuario, con enfoque en  <span class="text-indigo-300">QA testing y automatización</span>. de pruebas para garantizar productos digitales de alta calidad.
+ 
+</p>
+
       </div>
     </section>
 
@@ -150,6 +146,7 @@ function closeModal() {
 // --- ARRAYS DE DATOS ---
 const certificados = [
   { nombre: "Web Developer", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c1.png?raw=true" },
+  { nombre: "Software Testing ", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c7.png?raw=true" },
   { nombre: "TailwindCSS", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c2.png?raw=true" },
   { nombre: "Git GitHub", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c3.png?raw=true" },
   { nombre: "Postman", imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/c4.png?raw=true" },
@@ -171,6 +168,7 @@ const tecnologias = [
   { nombre: "Jenkins", logo: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/jenkins/jenkins-original.svg" },
   { nombre: "IBM API Connect", logo: "https://raw.githubusercontent.com/VectorLogoZone/vectorlogozone/b1ee6e4bb063e2db8bbf07278cb619b038c2f655/www/logos/ibm/ibm-icon.svg" },
   { nombre: "Docker", logo: "https://raw.githubusercontent.com/VectorLogoZone/vectorlogozone/b1ee6e4bb063e2db8bbf07278cb619b038c2f655/www/logos/docker/docker-icon.svg" },
+  { nombre: "Cypress", logo: "https://raw.githubusercontent.com/cypress-io/cypress-icons/e61b554695b28267a1387a839f816c73e7a7e95e/src/logo/cypress-io-logo-round.svg" },
   { nombre: "VS Code", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
   { nombre: "SQL Server", logo: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/microsoftsqlserver/microsoftsqlserver-original.svg" },
 ];
