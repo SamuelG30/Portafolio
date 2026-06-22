@@ -158,7 +158,13 @@ const tecnologias = [
   { nombre: "HTML5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
   { nombre: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
   { nombre: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-  { nombre: "Vue.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" },
+ { 
+  nombre: "React", 
+  logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" 
+},{
+  nombre: "Node.js",
+  logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+},
   { nombre: "TailwindCSS", logo: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/tailwindcss/tailwindcss-original.svg" },
   { nombre: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
   { nombre: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
@@ -166,7 +172,6 @@ const tecnologias = [
   { nombre: "Jira", logo: "https://raw.githubusercontent.com/VectorLogoZone/vectorlogozone/b1ee6e4bb063e2db8bbf07278cb619b038c2f655/www/logos/atlassian_jira/atlassian_jira-icon.svg" },
   { nombre: "BitBucket", logo: "https://raw.githubusercontent.com/VectorLogoZone/vectorlogozone/b1ee6e4bb063e2db8bbf07278cb619b038c2f655/www/logos/bitbucket/bitbucket-icon.svg" },
   { nombre: "Jenkins", logo: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/jenkins/jenkins-original.svg" },
-  { nombre: "IBM API Connect", logo: "https://raw.githubusercontent.com/VectorLogoZone/vectorlogozone/b1ee6e4bb063e2db8bbf07278cb619b038c2f655/www/logos/ibm/ibm-icon.svg" },
   { nombre: "Docker", logo: "https://raw.githubusercontent.com/VectorLogoZone/vectorlogozone/b1ee6e4bb063e2db8bbf07278cb619b038c2f655/www/logos/docker/docker-icon.svg" },
   { nombre: "Cypress", logo: "https://raw.githubusercontent.com/cypress-io/cypress-icons/e61b554695b28267a1387a839f816c73e7a7e95e/src/logo/cypress-io-logo-round.svg" },
   { nombre: "VS Code", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
@@ -174,6 +179,18 @@ const tecnologias = [
 ];
 
 const proyectos = [
+   {
+    nombre: "En Desarrollo, Tienda en Linea (REACT + TAILWIND CSS + BASE DE DATOS + Pago en Linea Con Backend. )",
+    descripcion: "Tienda personal en Proceso de e-commerce.",
+    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/7.png?raw=true",
+    link: "https://violet-bear-185744.hostingersite.com/"
+  },
+  {
+    nombre: "Empresa (REACT + TAILWIND CSS + BASE DE DATOS + API de WhatsApp. )",
+    descripcion: "Sitio Web Para Empresa De Riego.",
+    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/6.png?raw=true",
+    link: "https://darkslateblue-yak-347191.hostingersite.com/"
+  },
   {
     nombre: "Restaurante (REACT + TAILWIND CSS + BASE DE DATOS + API de WhatsApp. )",
     descripcion: "Sitio Web Para Restaurante Con Funcion de Pedidos Con Api.",
@@ -192,12 +209,7 @@ const proyectos = [
     imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/2.png?raw=true",
     link: "https://storemultishop.com/MaxSupply/Suplementos/Creatina.html"
   },
-  {
-    nombre: "MarkeShop (Base de Datos)",
-    descripcion: "Pagina Web Responsive Para Vender y Comprar Productos",
-    imagen: "https://github.com/SamuelG30/Portafolio/blob/main/src/assets/3.png?raw=true",
-    link: "https://storemultishop.com/MarkeShop/Inicio.html"
-  },
+
     {
     nombre: "Portafolio (VUES.JS + TAILWIND CSS) ",
     descripcion: "Portafolios Actractivos y Modernos ",
